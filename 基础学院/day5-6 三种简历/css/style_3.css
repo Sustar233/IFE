@@ -1,0 +1,42 @@
+
+.resume {
+    width: 100%;
+    padding: 10px;
+}
+
+header {
+    width: 100%;
+    color: #ffffff;
+    padding: 30px;
+    background-color: gray;
+}
+
+main h2 {
+    float: left;
+    margin: 0;
+    width: 180px;
+    height: 180px;
+    line-height: 180px;
+    text-align: center;
+    background-color: rgb(207, 207, 207);
+}
+
+main ul {
+    margin: 0 0 1px 180px;
+    height: 180px;
+    border-top: 2px solid rgb(207, 207, 207);
+}
+
+.u-row {
+    padding: 15px;
+    height: 150px;
+}
+
+.u-col {
+    padding: 0 15px;
+}
+
+.u-col li p {
+    margin-top: 0;
+    display: inline-block;
+}
