@@ -1,0 +1,154 @@
+
+/* header */
+header {
+    height: 80px;
+    background-color: #333333;
+}
+
+.h-sec {
+    position: relative;
+    margin: 0 auto;
+    width: 960px;
+    height: 80px;
+}
+
+.logo {
+    position: absolute;
+    top: 15px;
+    color: #ffffff;
+    font-size: 29px;
+}
+
+.h-sec nav ul {
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+.h-sec li {
+    float: left;
+    margin-right: 8px;
+}
+
+.h-sec a {
+    color: white;
+}
+
+/* slider */
+.slider {
+    position: relative;
+    height: 300px;
+    background-color: #66bb33;
+}
+
+.slider nav {
+    position: absolute;
+    right: 288px;
+    bottom: 10px;
+    width: 135px;
+    height: 50px;
+    text-align: center; 
+}
+
+.slider ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end
+}
+
+.slider nav li {
+    margin-left: 4px;
+    flex: 1;
+    width: 26px;
+    height: 32px;
+    border: 1px solid;
+    opacity: 0.4;
+    line-height: 33px;
+    cursor: pointer;
+}
+
+.slider nav .selected {
+    width: 27px;
+    height: 48px;
+    line-height: 67px;
+    background-color: white;
+    opacity: 0.8;
+    border: 1.5px solid;
+}
+
+/* main */
+main {
+    position: relative;
+}
+
+.m-content {
+    margin: 0 auto;
+    width: 960px;
+    overflow: hidden;
+}
+
+.m-nav {
+    position: absolute;
+    top: 20px;
+    text-align: center;
+}
+
+.m-nav li {
+    width: 105px;
+    height: 49px;
+    line-height: 49px;
+    border: 1px solid rgba(122, 122, 122, 0.6);
+    border-radius: 19px 19px 0 0;
+    border-bottom: none;
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+
+main .hr {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    border-top: 1px solid rgba(122, 122, 122, 0.6);
+}
+
+.m-nav .selected {
+    position: relative;
+    z-index: 1;
+    border-bottom: 3px solid white;
+    background-color: white;
+}
+
+/* m-conts */
+.m-conts {
+    display: flex;
+    /* margin-top: 70px; */
+    padding: 70px 0 20px 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.m-conts div {
+    box-sizing: border-box;
+    margin-top: 9px;
+    padding: 80px;
+    height: 174px;
+    border: 1px solid #cccccc;
+    color: black;
+}
+
+.m-cont1 {
+    width: 32.6%;
+}
+
+/* footer */
+footer {
+    padding-top: 20px;
+    height: 100px;
+    text-align: center;
+    background-color: #666666;
+}
+
+footer span {
+    color: white;
+}
