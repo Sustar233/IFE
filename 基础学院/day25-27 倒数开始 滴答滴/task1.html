@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="clock">
+        现在时间是 <span class="year"></span> 年
+        <span class="month"></span> 月
+        <span class="day"></span> 日
+        <span class="week"></span>
+        <span class="hour">00</span> :
+        <span class="minute">00</span> :
+        <span class="second">00</span>
+    </div>
+    <script>
+        let $ = (target) => document.querySelector(target);
+        let clock = $('.clock');
+        let year = $('.year');
+        let month = $('.month');
+        let day = $('.day');
+        let week = $('.week');
+        let hour = $('.hour');
+        let minute = $('.minute');
+        let second = $('.second');
+        
+        let weekCn = ['一', '二', '三', '四', '五', '六', '七'];
+
+        let nowDay = new Date();
+        year.innerHTML = nowDay.getFullYear();
+        month.innerHTML = nowDay.getMonth() + 1;
+        day.innerHTML = nowDay.getDate();
+        week.innerHTML = '星期' + weekCn[nowDay.getDay() - 1];
+
+        setInterval(function() {
+            let nowTime = new Date();
+            hour.innerHTML = nowTime.getHours();
+            minute.innerHTML = nowTime.getMinutes();
+            second.innerHTML = nowTime.getSeconds();
+        }, 1000);
+    </script>
+</body>
+</html>
